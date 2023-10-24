@@ -44,6 +44,9 @@ void Frog_Lever::InitComponent()
 	m_pRenderer->GetTransform()->SetLocalScale(float4{ 100, 100, 100 });
 	m_pRenderer->SetFBXMesh("LEVER_MESH.FBX", "ContentAniMeshDeffered");
 	m_pRenderer->CreateFBXAnimation("Lever_Open", "LEVER_OPEN (1).FBX", { 1.f/30.f, false });
+	
+
+
 	m_pRenderer->ChangeAnimation("Lever_Open");
 
 	float4 MeshScale = m_pRenderer->GetMeshScale();

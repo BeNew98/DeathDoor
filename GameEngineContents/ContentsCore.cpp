@@ -20,6 +20,7 @@
 #include "FrogBossLevel.h"
 #include "UITestLevel.h"
 #include "BossTestLevel.h"
+#include "OldCrowLevel.h"
 
 #include "PlayerTestLevel.h"
 
@@ -57,6 +58,7 @@ void ContentsCore::GameStart()
 	GameEngineCore::CreateLevel<OfficeLevel>();
 	GameEngineCore::CreateLevel<FortressLevel>();
 	GameEngineCore::CreateLevel<FrogBossLevel>();
+	GameEngineCore::CreateLevel<OldCrowLevel>();
 	GameEngineCore::CreateLevel<PlayerTestLevel>();
 	GameEngineCore::CreateLevel<BossTestLevel>();
 

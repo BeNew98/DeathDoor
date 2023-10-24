@@ -26,6 +26,9 @@ void Ladder::InitComponent()
 	m_pRenderer = CreateComponent<ContentFBXRenderer>();
 	m_pRenderer->SetFBXMesh("Ladder.fbx", "ContentMeshDeffered");
 
+	auto Unit = m_pRenderer->GetAllRenderUnit();
+	Unit[0][0]->ShaderResHelper.SetTexture("DiffuseTexture", "BlackScreen.png");
+
 
 	float4 MeshScale = m_pRenderer->GetMeshScale();
 

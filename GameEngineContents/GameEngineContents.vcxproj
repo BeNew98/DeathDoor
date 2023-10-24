@@ -326,6 +326,7 @@
     <ClCompile Include="ContentsCore.cpp" />
     <ClCompile Include="Contents_Resources.cpp" />
     <ClCompile Include="FadeEffect.cpp" />
+    <ClCompile Include="OldCrowLevel.cpp" />
     <ClCompile Include="TriggerBase.cpp">
       <SubType>
       </SubType>
@@ -702,6 +703,10 @@
     <ClInclude Include="ContentsCore.h" />
     <ClInclude Include="ContentsEnum.h" />
     <ClInclude Include="FadeEffect.h" />
+    <ClInclude Include="OldCrowLevel.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="TriggerBase.h">
       <SubType>
       </SubType>

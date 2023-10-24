@@ -7,6 +7,7 @@ enum class ContentLevelType
 	OfficeLevel,
 	FortressLevel,
 	FrogBossLevel,
+	OldCrowLevel,
 };
 
 class ContentLevel : public PhysXLevel

@@ -34,7 +34,9 @@ void Map_Emptyplain::InitComponent()
 
 
 	auto Unit = m_pRenderer->GetAllRenderUnit();
-	Unit[0][0]->ShaderResHelper.SetTexture("DiffuseTexture", "avarice_n_noise.png");
+
+	// 색상임시 
+	Unit[0][0]->ShaderResHelper.SetTexture("DiffuseTexture", "OldCrowFloor_Gray.png");
 	
 	/*auto UnTexUnit = m_pRenderer->GetUnTexturedUnit();
 	UnTexUnit.begin()->second->ShaderResHelper.SetTexture("DiffuseTexture", "avarice_n_noise.png");*/

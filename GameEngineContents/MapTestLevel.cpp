@@ -51,11 +51,12 @@ void MapTestLevel::Update(float _DeltaTime)
 void MapTestLevel::LevelChangeStart()
 {
 	CreateScene();
-	SetTestLevelType(TestMapType::BigCrow_Floor);
+	SetTestLevelType(TestMapType::OldCrowFloor);
 
 	InitTestLevel();
 	
-	CreateActor<GameEngineLight>();
+	std::shared_ptr<GameEngineLight> Light = CreateActor<GameEngineLight>();
+	Light->GetTransform()->SetLocalRotation(float4{ 20, 180, 0 });
 
 	LevelInit();
 }
@@ -90,7 +91,7 @@ void MapTestLevel::InitTestLevel()
 		}
 	}
 		break;
-	case TestMapType::BigCrow_Floor:
+	case TestMapType::OldCrowFloor:
 	{
 		GetMainCamera()->GetTransform()->SetLocalPosition(float4{ 0, 700, -2500 });
 		std::shared_ptr<SecretTile> NewTile = CreateActor<SecretTile>();

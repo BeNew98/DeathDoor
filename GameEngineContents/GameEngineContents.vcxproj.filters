@@ -402,6 +402,9 @@
       <Filter>Contents\FortressLevel\Map_Object</Filter>
     </ClCompile>
     <ClCompile Include="TriggerBase.cpp" />
+    <ClCompile Include="OldCrowLevel.cpp">
+      <Filter>Contents\OldCrowLevel</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CenterLevel.h">
@@ -799,6 +802,9 @@
       <Filter>Contents\FortressLevel\Map_Object</Filter>
     </ClInclude>
     <ClInclude Include="TriggerBase.h" />
+    <ClInclude Include="OldCrowLevel.h">
+      <Filter>Contents\OldCrowLevel</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
@@ -995,6 +1001,9 @@
     </Filter>
     <Filter Include="FSMObject\Lever">
       <UniqueIdentifier>{d3b110a3-3ec6-4f11-b376-c2e3e70f2da4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\OldCrowLevel">
+      <UniqueIdentifier>{9ec9370b-d247-4591-aaec-15f02c51ed71}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

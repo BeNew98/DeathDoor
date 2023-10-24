@@ -4,7 +4,7 @@
 enum class TestMapType
 {
 	Office,
-	BigCrow_Floor,
+	OldCrowFloor,
 	None,
 };
 

@@ -18,6 +18,7 @@ FrogBossLevel::~FrogBossLevel()
 
 void FrogBossLevel::Start()
 {	
+	SetContentLevelType(ContentLevelType::FrogBossLevel);
 	InitKey();
 }
 

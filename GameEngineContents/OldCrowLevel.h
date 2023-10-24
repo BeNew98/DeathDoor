@@ -25,8 +25,8 @@ protected:
 private:
 	void InitKey();
 
-	const float4 m_CameraPos = float4{ 0, 0, -1000 };
-	const float4 m_CameraRot = float4::ZERONULL;
+	const float4 m_CameraPos = float4{ 0, 2000, -1400 };
+	const float4 m_CameraRot = float4{ 55, 0, 0 };
 
 	void Set_PlayerStartPos();
 	const float4 m_StartPos = float4{ 0, 1, 0 };

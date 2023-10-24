@@ -10,6 +10,11 @@
 #include "PhysXControllerComponent.h"
 
 
+
+
+
+
+
 OldCrowLevel::OldCrowLevel()
 {
 }
@@ -26,6 +31,13 @@ void OldCrowLevel::Start()
 
 void OldCrowLevel::Update(float _DeltaTime)
 {
+	if (false == GetMainCamera()->IsFreeCamera())
+	{
+		float4 nextPos = Player::MainPlayer->GetTransform()->GetWorldPosition();
+		nextPos.y += 2000.0f;
+		nextPos.z -= 2000.0f * tanf((90.0f - m_CameraRot.x) * GameEngineMath::DegToRad);
+		GetMainCamera()->GetTransform()->SetWorldPosition(float4::LerpClamp(GetMainCamera()->GetTransform()->GetWorldPosition(), nextPos, _DeltaTime * 3.0f));
+	}
 }
 
 void OldCrowLevel::LevelChangeStart()
@@ -45,6 +57,9 @@ void OldCrowLevel::LevelChangeStart()
 	std::shared_ptr<Player> Obj = CreateActor<Player>();
 	float4 Pos = Obj->GetTransform()->GetWorldPosition();
 	Set_PlayerStartPos();
+
+	std::shared_ptr<Boss_OldCrow> BossTestObject = CreateActor<Boss_OldCrow>();
+	BossTestObject->GetPhysXComponent()->SetWorldPosWithParent(float4{ 0, 0, -1000 }, float4{ 0, 90, 0 });
 }
 
 void OldCrowLevel::LevelChangeEnd()

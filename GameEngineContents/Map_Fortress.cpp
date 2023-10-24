@@ -13,9 +13,12 @@
 #include "SecretTile.h"
 #include "Crate.h"
 #include "Ladder.h"
+#include "WoodenBridge.h"
 
 #include "CullingObject.h"
 #include "CullingTrigger.h"
+
+
 
 Map_Fortress::Map_Fortress()
 {
@@ -111,6 +114,10 @@ void Map_Fortress::Create_Ground()
 	m_pRenderer_Cube2->GetTransform()->SetLocalPosition(float4{ -11735, -120, 18625 });
 	m_pRenderer_Cube2->GetTransform()->SetParent(GetTransform());
 
+	
+	std::shared_ptr<WoodenBridge> Obj = GetLevel()->CreateActor<WoodenBridge>();
+	Obj->GetTransform()->SetLocalRotation(float4{ 0, 45, 0 });
+	Obj->GetTransform()->SetWorldPosition(float4{ -9500, -6, 4620 });
 	//auto AllUnit = m_pRenderer_Part3->GetAllRenderUnit();
 	//auto UnTextureUnit = m_pRenderer_Part3->GetUnTexturedUnit();
 	//

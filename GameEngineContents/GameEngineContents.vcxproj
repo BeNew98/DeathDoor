@@ -504,6 +504,7 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="WoodenBridge.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Boomerang.h" />
@@ -924,6 +925,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="WaterBox.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="WoodenBridge.h">
       <SubType>
       </SubType>
     </ClInclude>

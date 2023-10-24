@@ -124,9 +124,6 @@
     <ClCompile Include="PlayerInit.cpp">
       <Filter>Contents\PlayerTestLevel</Filter>
     </ClCompile>
-    <ClCompile Include="Map_Emptyplain.cpp">
-      <Filter>Contents\TestLevel\MapTestLevel\Actor</Filter>
-    </ClCompile>
     <ClCompile Include="PhysXManager.cpp">
       <Filter>Component\PhysX\ParentClass</Filter>
     </ClCompile>
@@ -405,6 +402,9 @@
     <ClCompile Include="OldCrowLevel.cpp">
       <Filter>Contents\OldCrowLevel</Filter>
     </ClCompile>
+    <ClCompile Include="Map_Emptyplain.cpp">
+      <Filter>Contents\OldCrowLevel\Map</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CenterLevel.h">
@@ -526,9 +526,6 @@
     </ClInclude>
     <ClInclude Include="PlayerTestLevel.h">
       <Filter>Contents\PlayerTestLevel</Filter>
-    </ClInclude>
-    <ClInclude Include="Map_Emptyplain.h">
-      <Filter>Contents\TestLevel\MapTestLevel\Actor</Filter>
     </ClInclude>
     <ClInclude Include="PhysXManager.h">
       <Filter>Component\PhysX\ParentClass</Filter>
@@ -805,6 +802,9 @@
     <ClInclude Include="OldCrowLevel.h">
       <Filter>Contents\OldCrowLevel</Filter>
     </ClInclude>
+    <ClInclude Include="Map_Emptyplain.h">
+      <Filter>Contents\OldCrowLevel\Map</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Base">
@@ -1004,6 +1004,9 @@
     </Filter>
     <Filter Include="Contents\OldCrowLevel">
       <UniqueIdentifier>{9ec9370b-d247-4591-aaec-15f02c51ed71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\OldCrowLevel\Map">
+      <UniqueIdentifier>{9d2aac6d-a6a5-4189-8027-c4dbbdb971aa}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

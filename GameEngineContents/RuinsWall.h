@@ -20,6 +20,11 @@ public:
 		return m_pPhysXComponent;
 	}
 
+	inline std::shared_ptr<class ContentFBXRenderer> GetRenderer() const
+	{
+		return m_pRenderer;
+	}
+
 protected:
 	void Start() override;
 	void Update(float _DeltaTime) override;

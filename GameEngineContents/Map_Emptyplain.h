@@ -22,7 +22,7 @@ protected:
 private:
 	void InitComponent();
 
-	std::shared_ptr<class PhysXBoxComponent> m_pComp = nullptr;
+	std::shared_ptr<class PhysXTriangleComponent> m_pTriangleComp = nullptr;
 	std::shared_ptr<class ContentFBXRenderer> m_pRenderer = nullptr;
 	std::shared_ptr<GameEngineFBXRenderer> m_pNaviRenderer = nullptr;
 };
